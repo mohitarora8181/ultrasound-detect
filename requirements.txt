@@ -1,9 +1,8 @@
 Flask
-Numpy
+numpy
 urllib3
-cv2
+opencv-python
 matplotlib
-PIL
+pillow
 keras
-Tensorflow
 Gunicorn
