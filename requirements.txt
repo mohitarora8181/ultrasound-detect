@@ -1,0 +1,9 @@
+Flask
+Numpy
+urllib3
+cv2
+matplotlib
+PIL
+keras
+Tensorflow
+Gunicorn
