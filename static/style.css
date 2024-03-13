@@ -1,0 +1,91 @@
+body{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: url('../assets/images/bg.jpg');
+    background-size: cover;
+    background-repeat: none;
+    width: 100vw;
+    height: 100vh;
+}
+.display-4 {
+    margin-top: 50px;
+    font-size: 5rem;
+    color: #FF407D;
+}
+.heading{
+    color: #FF407D;
+    display: flex;
+    justify-content: center;
+    height: 250vh;
+    width: 100vw;
+}
+.middle-section{
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    height: 70vh;
+    padding: 20px;
+    margin-bottom: 5%;
+}
+.left{
+    width:40vw;
+    height: 60vh;
+    background: transparent;
+    border-radius: 25px;
+    border: 5px solid #FF407D;
+    backdrop-filter: blur(50px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.right{
+    width:40vw;
+    height: 70vh;
+    background: white;
+    border: 5px solid #FF407D;
+    border-radius: 25px;
+    color: #FF407D;
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.right h1{
+    color: #FF407D;
+}
+.dropbox{
+   
+    background: white;
+}
+#img-button{
+    width: 250px;
+    height: 250px;
+    
+}
+.text-body-emphasis{
+    color: #FF407D;
+}
+#result-title{
+    color: #FF407D;
+}
+.btn-primary{
+    background: #FF407D;
+    border: 2px solid #FF407D;
+}
+.btn-outline-secondary{
+    color: #FF407D;
+    border: 2px solid #FF407D;
+    width: 300px;
+}
+.btn:hover
+{
+    border: 2px solid #FF407D;
+    background: #FF407D;
+    columns: white;
+}
+.btn{
+    width: 300px;
+}
