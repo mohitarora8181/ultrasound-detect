@@ -54,3 +54,6 @@ def get_out():
 		result = classify_image(dataset1)
 
 	return render_template("index.html" ,predict = result, img_path = "inputs.png")
+
+if __name__ == '__main__':
+    app.run()
