@@ -1,7 +1,7 @@
 Flask == 3.0.0
 numpy == 1.26.2
 urllib3
-opencv-python == 4.8.1
+opencv-python == 4.8.1.78
 matplotlib == 3.8.2
 pillow == 10.1.0
 keras == 2.15.0
