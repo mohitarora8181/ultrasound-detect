@@ -6,9 +6,19 @@ from keras.models import load_model
 from keras.preprocessing import image
 import urllib.request
 from PIL import Image
+import json
 
-model = load_model('final_model.h5') 
-
+try:
+    model = load_model("final_model.h5")
+except TypeError:
+    with open("final_model.h5", "r") as file:
+        model_config = json.load(file)
+        for layer in model_config.get("layers", []):
+            if layer.get("class_name") == "BatchNormalization" and isinstance(layer["config"]["axis"], list):
+                layer["config"]["axis"] = layer["config"]["axis"][0] 
+        with open("updated_model_config.json", "w") as out_file:
+            json.dump(model_config, out_file)
+            
 # Define class labels
 class_labels = ['benign', 'malignant', 'normal']
 
@@ -54,3 +64,6 @@ def get_out():
 		result = classify_image(dataset1)
 
 	return render_template("index.html" ,predict = result, img_path = "inputs.png")
+
+if __name__ == '__main__':
+    app.run()
